@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import Logo from '@/public/images/LearnChain_logo_ts.png'
+import LogoSvg from '@/public/images/LearnChain.svg'
 
 export default function Header() {
   return (
@@ -12,7 +13,7 @@ export default function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link href="/" className="block" aria-label="LearnChain">
-              <Image  src={Logo} width={50} height={50} alt="Logo" />
+              <Image  src={LogoSvg} width={50} height={50} alt="Logo" />
             </Link>
           </div>
         </div>
