@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Open PRO',
-  description: 'Page description',
+  title: 'LearnChain',
+  description: 'Educação Descentralizada e Colaborativa',
 }
 
 import Hero from '@/components/hero'
@@ -15,8 +15,8 @@ export default function Home() {
       <Hero />
       <Features />
       <Zigzag />
-      <Testimonials />
-      <Newsletter />
+     {/*<Testimonials />*/}       
+     <Newsletter />
     </>
   )
 }
