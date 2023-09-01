@@ -1,5 +1,6 @@
-import VideoThumb from '@/public/images/hero-image-01.jpg'
+import VideoThumb from '@/public/images/hero-image-01.png'
 import ModalVideo from '@/components/modal-video'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -30,7 +31,11 @@ export default function Hero() {
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Inovando na disponibilização e monetização de conteúdo educacional usando Blockchain</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110" href="#0">Saiba mais</a>
+                <Link className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110" href="#features">Saiba mais</Link>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="600">
+                <Link href="https://idcesares.notion.site/idcesares/Manifesto-LearnChain-construindo-a-nova-gera-o-da-economia-do-saber-e3415fdbb9b244ba8d2541740c5523dc" className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" target='_blank'>Leia nosso manifesto</Link>
+              </div>
               </div>
             </div>
           </div>
@@ -45,8 +50,6 @@ export default function Hero() {
             videoHeight={1080} />
 
         </div>
-
-      </div>
     </section>
   )
 }

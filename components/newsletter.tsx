@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Newsletter() {
   return (
     <section>
@@ -28,10 +30,10 @@ export default function Newsletter() {
             </div>
 
             {/* CTA form */}
-            <form className="w-full lg:w-1/2">
+            <form className="w-full lg:w-1/2" action="mailto:contato@educadoronline.org" method="post">
               <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
                 <input type="email" className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400" placeholder="Seu melhor e-mail..." aria-label="Seu melhor e-mail..." />
-                <a className="btn text-purple-600 bg-purple-100 hover:bg-white shadow" href="#0">Assinar  </a>
+                <Link className="btn text-purple-600 bg-purple-100 hover:bg-white shadow" href="mailto:contato@educadoronline.org">Contato</Link>
               </div>
               {/* Success message */}
               {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
