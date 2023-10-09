@@ -1,4 +1,5 @@
 import './css/style.css'
+import { Analytics } from '@vercel/analytics/react';
 
 import { Inter, Architects_Daughter } from 'next/font/google'
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           {children}
+          <Analytics />
         </div>
       </body>
     </html>
